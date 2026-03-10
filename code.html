@@ -1,228 +1,311 @@
-<!DOCTYPE html>
-
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dra. Guiselle Antonio Flores - Ortopedia Pediátrica</title>
+<!DOCTYPE html><html lang="es-MX"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Dra. Guiselle Antonio Flores | Ortopedia Pediátrica</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#ec5b13",
-                        "background-light": "#f8f6f6",
-                        "background-dark": "#221610",
-                    },
-                    fontFamily: {
-                        "display": ["Public Sans", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#308ce8',
+            secondary: '#e0f2fe',
+            accent: '#fdf2f8',
+            medicalBlue: '#1e40af',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+          },
+          borderRadius: {
+            'custom': '8px',
+          }
         }
-    </script>
-<style>
-        body { font-family: 'Public Sans', sans-serif; }
-        .material-symbols-outlined { font-size: 24px; }
-    </style>
-<style>
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">
     body {
-      min-height: max(884px, 100dvh);
+      font-family: 'Manrope', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    }
+    .card-shadow {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .rounded-8 {
+      border-radius: 8px;
     }
   </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
-<!-- Top Navigation Bar -->
-<nav class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
-<div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+</head>
+<body class="bg-white text-slate-800">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100" data-purpose="header-navigation">
+<nav class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">medical_services</span>
-<span class="font-bold text-sm md:text-base leading-tight">Dra. Guiselle Antonio Flores</span>
+<div class="w-10 h-10 bg-primary rounded-8 flex items-center justify-center text-white">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
 </div>
-<a class="bg-primary text-white px-4 py-2 rounded-full text-xs font-bold flex items-center gap-1" href="https://wa.me/522214365261">
-<span class="material-symbols-outlined text-sm">calendar_month</span>
-                Cita
-            </a>
+<div>
+<h1 class="font-bold text-lg leading-tight text-medicalBlue" style="">Dra. Guiselle Antonio</h1>
+<p class="text-xs text-slate-500 uppercase tracking-wider font-semibold" style="">Ortopedia Pediátrica</p>
 </div>
+</div>
+<a class="hidden md:flex items-center gap-2 bg-primary hover:bg-blue-600 text-white px-5 py-2.5 rounded-8 font-semibold transition-all" href="https://wa.me/522214365261" target="_blank" style="">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.236 3.484 8.417 0 6.556-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.652zm5.835-3.332.33.196c1.461.868 3.148 1.327 4.873 1.328 5.259 0 9.537-4.278 9.537-9.537 0-2.546-.994-4.94-2.803-6.75a9.404 9.404 0 0 0-6.734-2.782c-5.259 0-9.538 4.278-9.538 9.538 0 1.748.48 3.452 1.388 4.935l.215.352-.99 3.613 3.712-.973zm9.213-4.661c-.29-.145-1.711-.845-1.976-.942-.266-.097-.459-.145-.653.145-.193.291-.748.943-.918 1.137-.169.194-.338.217-.628.072-.29-.145-1.223-.45-2.33-1.439-.861-.767-1.442-1.716-1.611-2.006-.169-.29-.018-.447.127-.591.13-.13.29-.338.435-.508.145-.17.193-.29.29-.484.097-.193.048-.362-.024-.508-.073-.145-.653-1.573-.894-2.153-.235-.565-.474-.488-.653-.497-.169-.008-.362-.01-.555-.01s-.508.073-.773.362c-.266.291-1.015.992-1.015 2.42s1.039 2.805 1.184 3.023c.145.217 2.044 3.12 4.953 4.378.691.299 1.232.478 1.653.612.695.22 1.328.19 1.829.115.557-.083 1.711-.699 1.953-1.374.242-.676.242-1.257.17-1.374-.074-.117-.266-.193-.556-.338z"></path></svg>
+        WhatsApp
+      </a>
 </nav>
-<!-- Hero Section -->
-<header class="relative overflow-hidden pt-8 pb-12 px-4 md:py-20">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-<div class="order-2 md:order-1 space-y-6">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold">
-<span class="material-symbols-outlined text-sm">verified</span>
-                    Especialista en Ortopedia Pediátrica
-                </div>
-<h1 class="text-4xl md:text-6xl font-black text-slate-900 dark:text-white leading-[1.1]">
-                    ¿Tu bebé necesita un <span class="text-primary">tamiz de cadera?</span>
-</h1>
-<p class="text-lg text-slate-600 dark:text-slate-300 max-w-lg">
-                    Descúbrelo en menos de 30 segundos con nuestra evaluación rápida. Protege el futuro caminar de tu hijo con un diagnóstico oportuno.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2">
-                        Comenzar evaluación
-                        <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="order-1 md:order-2 relative">
-<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
-<img alt="Dra. Guiselle Antonio Flores" class="w-full h-full object-cover" data-alt="Professional portrait of Dr. Guiselle Antonio Flores smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2hc7mILoaA3XFpBFDRRYBIkzQH7TAl18mZFJh0buNMoX8pFv_8HY20uX31LQdG0GVHa2sQB0fcJ5RgP83bgHUGwU9ObuDKP9dEsNb9d0xxh8iDBQORsi_kCt1fkuijfAD1T_qW5c2CQrNufdr2OrLMo9FOlP2UB4nFDdqG2lHWjW2_pnNhwuaJBsZWDZgXJhZTiwDCfeE3tNnoN4x0er7qbuysV5-Nw6InM75o7UxaU8fgoNOz3owCMOM-ISYd8EQ7cC4hgMTo6c"/>
-</div>
-<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl hidden md:block border border-primary/10">
-<p class="text-primary font-bold text-xl leading-none">Hospital Ángeles</p>
-<p class="text-slate-500 text-sm">Puebla, México</p>
-</div>
-</div>
-</div>
 </header>
-<!-- Educational Block -->
-<section class="bg-primary/5 py-16 px-4">
-<div class="max-w-4xl mx-auto text-center space-y-8">
-<h2 class="text-3xl font-bold">¿Qué es la Displasia de Cadera?</h2>
-<div class="grid md:grid-cols-2 gap-8 text-left">
-<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-primary/5">
-<span class="material-symbols-outlined text-primary mb-4">info</span>
-<p class="text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Es una afección donde la articulación de la cadera no se formó adecuadamente. Si no se detecta a tiempo, puede causar cojera, dolor crónico y desgaste prematuro.
-                    </p>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="hero-gradient pt-12 pb-20 md:pt-20 md:pb-32 px-4 overflow-hidden" data-purpose="hero-section">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6 text-center md:text-left">
+<h2 class="text-4xl md:text-6xl font-extrabold text-medicalBlue leading-tight" style="">
+          ¿Tu bebé necesita un <span class="text-primary" style="">tamiz de cadera?</span>
+</h2>
+<p class="text-lg md:text-xl text-slate-600 max-w-xl" style="">
+          Descúbrelo en menos de 30 segundos con estas preguntas diseñadas por expertos en ortopedia pediátrica.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a class="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-8 text-lg font-bold shadow-lg shadow-blue-200 transition-all text-center" href="#test" style="">
+            Comenzar evaluación
+          </a>
 </div>
-<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-primary/5">
-<span class="material-symbols-outlined text-primary mb-4">clinical_notes</span>
-<p class="text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Un diagnóstico temprano mediante el <strong>tamiz de cadera</strong> es vital. Es un estudio rápido, indoloro y no invasivo que previene complicaciones futuras.
-                    </p>
+<div class="pt-8 border-t border-slate-200 inline-block">
+<p class="font-bold text-slate-800" style="">Dra. Guiselle Antonio Flores</p>
+<p class="text-slate-500 text-sm" style="">Traumatología y Ortopedia – Ortopedia Pediátrica</p>
+<p class="text-primary text-sm font-semibold" style="">Hospital Ángeles Puebla</p>
+</div>
+</div>
+<div class="relative flex justify-center">
+<!-- Decoration element -->
+<div class="absolute -z-10 w-72 h-72 bg-blue-200/50 rounded-full blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+<div class="relative">
+<img alt="Dra. Guiselle Antonio Flores" class="rounded-2xl shadow-2xl object-cover w-full max-w-sm md:max-w-md" src="https://scontent.fpbc1-1.fna.fbcdn.net/v/t39.30808-6/631432270_122265217388248300_6720644719653730444_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=7b2446&amp;_nc_ohc=51eUmcuZ66cQ7kNvwGG5M_I&amp;_nc_oc=Adn9mN2nfgiJnrfsSyY1DIJncgaHOAcMOl07UPMXUl9QM6PdD8a57jsXhc96yCOPoEmF-Zv-pgrrtTA8k28-iNfo&amp;_nc_zt=23&amp;_nc_ht=scontent.fpbc1-1.fna&amp;_nc_gid=ak4K9H2TIyshFDwdRmGtog&amp;_nc_ss=8&amp;oh=00_Afz_cUsRwCnUPhPL8H0b9X-j_N3HMmKoPdYujbdCTwLRdQ&amp;oe=69B128C3" style="">
+<div class="absolute bottom-6 -right-6 md:-right-12 bg-white p-4 rounded-8 shadow-xl max-w-[200px]">
+<div class="flex items-center gap-2 mb-2">
+<span class="flex -space-x-2">
+<span class="w-6 h-6 rounded-full bg-blue-400 border-2 border-white"></span>
+<span class="w-6 h-6 rounded-full bg-pink-300 border-2 border-white"></span>
+<span class="w-6 h-6 rounded-full bg-blue-300 border-2 border-white"></span>
+</span>
+<span class="text-xs font-bold text-slate-700" style="">+500 Bebés</span>
+</div>
+<p class="text-xs text-slate-500 italic" style="">Evaluados con éxito este año.</p>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Risk Quiz Section -->
-<section class="py-20 px-4">
-<div class="max-w-2xl mx-auto">
+<!-- END: HeroSection -->
+<!-- BEGIN: EducationalSection -->
+<section class="py-20 px-4 bg-white" data-purpose="educational-content">
+<div class="max-w-4xl mx-auto">
 <div class="text-center mb-12">
-<h2 class="text-3xl font-bold mb-4">Evaluación de Riesgo Rápida</h2>
-<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+<span class="bg-secondary text-primary px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest" style="">Información Vital</span>
+<h2 class="text-3xl md:text-4xl font-bold text-medicalBlue mt-4" style="">¿Qué es la Displasia de Cadera?</h2>
 </div>
-<div class="space-y-6">
+<div class="grid md:grid-cols-2 gap-10 items-center">
+<div class="space-y-4 text-slate-600 leading-relaxed">
+<p class="" style="">
+            La <strong>displasia del desarrollo de cadera</strong> es una alteración en la forma en que se desarrolla la articulación de la cadera antes, durante o después del nacimiento.
+          </p>
+<p class="" style="">
+            Es la causa más común de cojera y problemas articulares degenerativos en la vida adulta si no se detecta y trata a tiempo. La buena noticia es que es 100% tratable si se detecta en los primeros meses.
+          </p>
+</div>
+<div class="bg-blue-50 border-l-4 border-primary p-8 rounded-r-8 card-shadow">
+<svg class="h-10 w-10 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<h4 class="text-xl font-bold text-medicalBlue mb-2" style="">Recomendación Médica</h4>
+<p class="text-medicalBlue/80 font-medium" style="">
+            "El ultrasonido de cadera debe realizarse idealmente antes de los 2 meses de edad para asegurar un diagnóstico oportuno."
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: EducationalSection -->
+<!-- BEGIN: TestSection -->
+<section class="py-20 px-4 bg-slate-50" data-purpose="risk-assessment-test" id="test">
+<div class="max-w-3xl mx-auto">
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+<div class="bg-primary p-6 text-white text-center">
+<h3 class="text-2xl font-bold" style="">Mini Test de Riesgo</h3>
+<p class="opacity-90" style="">Responde estas 4 preguntas rápidas</p>
+</div>
+<div class="p-8 space-y-8" id="test-container">
 <!-- Question 1 -->
-<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary/10">
-<p class="text-lg font-bold mb-4">1. ¿Fue el primer embarazo de la madre?</p>
-<div class="flex gap-4">
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">Sí</button>
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">No</button>
+<div class="space-y-4">
+<p class="font-bold text-slate-800 text-lg" style="">1. ¿En qué posición nació o estuvo su bebé en el último trimestre? (¿Sentado o de nalgas?)</p>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">Sí (Nalgas)</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No (Cefálico)</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No estoy segura</button>
 </div>
 </div>
 <!-- Question 2 -->
-<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary/10">
-<p class="text-lg font-bold mb-4">2. ¿Tu bebé nació por cesárea debido a que venía "sentado" (posición pélvica)?</p>
-<div class="flex gap-4">
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">Sí</button>
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">No</button>
+<div class="space-y-4">
+<p class="font-bold text-slate-800 text-lg" style="">2. ¿Es su bebé de sexo femenino?</p>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">Sí</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No</button>
 </div>
 </div>
 <!-- Question 3 -->
-<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary/10">
-<p class="text-lg font-bold mb-4">3. ¿Hay antecedentes familiares de problemas de cadera en la infancia?</p>
-<div class="flex gap-4">
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">Sí</button>
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">No</button>
+<div class="space-y-4">
+<p class="font-bold text-slate-800 text-lg" style="">3. ¿Existen antecedentes de displasia de cadera en la familia?</p>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">Sí</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No estoy segura</button>
 </div>
 </div>
 <!-- Question 4 -->
-<div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border-2 border-primary/10">
-<p class="text-lg font-bold mb-4">4. ¿Has notado que un pliegue de sus piernas es diferente al otro o un "chasquido" al moverlo?</p>
-<div class="flex gap-4">
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">Sí</button>
-<button class="flex-1 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:border-primary hover:text-primary transition-colors">No</button>
+<div class="space-y-4">
+<p class="font-bold text-slate-800 text-lg" style="">4. ¿Ha notado alguna limitación al abrir sus piernitas o un sonido "click"?</p>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">Sí</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No</button>
+<button class="px-6 py-2 border-2 border-slate-200 rounded-8 hover:border-primary hover:text-primary transition-all font-semibold" style="">No estoy segura</button>
 </div>
+</div>
+<div class="pt-6">
+<button class="w-full bg-primary text-white py-4 rounded-8 font-bold text-xl hover:bg-blue-600 transition-colors" onclick="document.getElementById('result-section').classList.remove('hidden'); this.parentElement.parentElement.classList.add('opacity-50');" style="">
+              Ver resultado
+            </button>
+</div>
+</div>
+</div>
+<!-- Result Section (Initially Hidden) -->
+<div class="hidden mt-12 bg-white rounded-2xl p-8 border-2 border-primary shadow-2xl animate-bounce-short" id="result-section">
+<div class="text-center">
+<div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<svg class="h-10 w-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-2xl font-bold text-medicalBlue mb-4" style="">Recomendación Final</h3>
+<p class="text-lg text-slate-700 mb-6 leading-relaxed" style="">
+            Basado en tus respuestas, <strong>tu bebé podría beneficiarse de una evaluación de cadera profesional.</strong>
+</p>
+<div class="bg-accent p-6 rounded-8 text-left mb-8">
+<p class="text-sm text-pink-800" style="">
+<span class="font-bold" style="">Dato importante:</span> El tamiz de cadera mediante ultrasonido es un estudio 100% seguro, libre de radiación y no causa ningún dolor a tu bebé. Es la mejor forma de asegurar su desarrollo motor.
+            </p>
+</div>
+<a class="block w-full bg-[#25D366] hover:bg-[#128C7E] text-white py-5 rounded-8 font-black text-xl shadow-lg transition-transform hover:scale-[1.02]" href="https://wa.me/522214365261" target="_blank" style="">
+            Agendar tamiz por WhatsApp
+          </a>
 </div>
 </div>
 </div>
 </section>
-<!-- Results / CTA Section -->
-<section class="py-20 px-4 bg-slate-900 text-white">
-<div class="max-w-4xl mx-auto text-center space-y-8">
-<h2 class="text-3xl font-bold">Obtén tu Recomendación Médica</h2>
-<p class="text-xl text-slate-400">Si respondiste "Sí" a una o más preguntas, es fundamental realizar una valoración especializada.</p>
-<div class="bg-primary/10 border border-primary/20 p-8 rounded-3xl inline-block w-full">
-<p class="text-2xl font-bold mb-6 text-primary">Atención Inmediata por WhatsApp</p>
-<a class="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#128C7E] text-white px-10 py-5 rounded-full font-black text-xl transition-all w-full md:w-auto" href="https://wa.me/522214365261">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.52.909 3.013 1.389 4.625 1.39 5.235.001 9.493-4.257 9.495-9.493.002-2.537-.987-4.922-2.787-6.722-1.8-1.802-4.187-2.792-6.727-2.793-5.236 0-9.493 4.256-9.495 9.492-.001 1.908.56 3.444 1.618 4.907l-.995 3.636 3.737-.981zM17.13 14.86c-.33-.165-1.954-.964-2.256-1.074-.303-.11-.523-.165-.743.165-.22.33-.853 1.074-1.046 1.294-.193.22-.385.248-.715.083-.33-.165-1.396-.514-2.66-1.64-1.002-.894-1.677-2.004-1.874-2.333-.197-.33-.021-.508.145-.672.148-.148.33-.385.495-.578.165-.193.22-.33.33-.55.11-.22.055-.412-.028-.577-.082-.165-.743-1.789-1.018-2.45-.268-.644-.54-.556-.743-.566-.19-.01-.412-.012-.633-.012-.22 0-.578.083-.88.412-.303.33-1.156 1.129-1.156 2.75s1.183 3.19 1.348 3.41c.165.22 2.328 3.555 5.639 4.985.787.341 1.402.544 1.88.697.79.251 1.51.216 2.078.131.634-.094 1.954-.798 2.229-1.568.275-.77.275-1.43.193-1.568-.083-.138-.303-.22-.633-.385z"></path></svg>
-                    WhatsApp Dra. Guiselle
-                </a>
-</div>
-</div>
-</section>
-<!-- Trust Elements: Credentials & Location -->
-<section class="py-20 px-4">
+<!-- END: TestSection -->
+<!-- BEGIN: TrustSection -->
+<section class="py-20 px-4" data-purpose="doctor-credentials-and-trust">
 <div class="max-w-7xl mx-auto">
-<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="grid md:grid-cols-2 gap-16 items-start">
+<!-- Credentials -->
 <div class="space-y-8">
-<h3 class="text-3xl font-bold">Sobre la Especialista</h3>
+<h3 class="text-3xl font-bold text-medicalBlue" style="">Tu bebé en las mejores manos</h3>
 <div class="space-y-6">
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-primary p-3 bg-primary/10 rounded-xl h-fit">school</span>
+<div class="flex-shrink-0 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
 <div>
-<h4 class="font-bold">Formación Académica</h4>
-<p class="text-slate-600 dark:text-slate-400">Subespecialista en Ortopedia Pediátrica con amplia experiencia en malformaciones congénitas y tamizaje temprano.</p>
+<h4 class="font-bold text-slate-800" style="">Especialista Certificada</h4>
+<p class="text-slate-500" style="">Certificada por el Consejo Mexicano de Ortopedia y Traumatología.</p>
 </div>
 </div>
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-primary p-3 bg-primary/10 rounded-xl h-fit">apartment</span>
+<div class="flex-shrink-0 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
 <div>
-<h4 class="font-bold">Ubicación Estratégica</h4>
-<p class="text-slate-600 dark:text-slate-400">Consultorio 520, Hospital Ángeles Puebla. Instalaciones de vanguardia para la seguridad de tu bebé.</p>
+<h4 class="font-bold text-slate-800" style="">Hospital Ángeles Puebla</h4>
+<p class="text-slate-500" style="">Ubicada en el centro médico más prestigioso de Puebla, con tecnología de vanguardia.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-bold text-slate-800" style="">Enfoque Humano</h4>
+<p class="text-slate-500" style="">Atención cálida y paciente, entendiendo las dudas y temores de los padres.</p>
 </div>
 </div>
 </div>
-<div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg border border-primary/10">
-<p class="text-primary font-black text-4xl mb-2">1,500+</p>
-<p class="font-bold text-lg mb-4">Familias atendidas con éxito</p>
-<div class="flex text-yellow-500">
-<span class="material-symbols-outlined">star</span>
-<span class="material-symbols-outlined">star</span>
-<span class="material-symbols-outlined">star</span>
-<span class="material-symbols-outlined">star</span>
-<span class="material-symbols-outlined">star</span>
 </div>
-<p class="mt-4 italic text-slate-500">"La Dra. Guiselle fue súper atenta con mi bebé. Gracias al tamizaje detectamos a tiempo un pequeño problema que ya se corrigió." - Mariana R.</p>
-</div>
-</div>
+<!-- Testimonials -->
+<div class="bg-blue-50/50 p-8 rounded-2xl border border-blue-100">
+<h3 class="text-2xl font-bold text-medicalBlue mb-8" style="">Lo que dicen los papás</h3>
 <div class="space-y-6">
-<h3 class="text-2xl font-bold">¿Cómo llegar?</h3>
-<div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white dark:border-slate-800 h-[400px]">
-<img alt="Mapa Hospital Ángeles Puebla" class="w-full h-full object-cover" data-location="Hospital Angeles Puebla" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOJXOqKtlrzxZ7GOQ_2qH8mbUrpIG2fjGsGQqbJHZhzd1wnw0FdoOyOelNY6k7tPRhrWdL_zHYX_6F8eh2OODGZ_HDoRLTE5TzUlKdepANLQUb57rLh3YShyhtvIPOqscqxOgWyrdVjjWHjq6Lo-afavCpPm6vrKgSqj3IfUOBcIbfMdxEWjCoykMPsByHhon5SuAUAXiQW4A0-MFJKJo7TzcoCWkvsJVSWFYSWInQjhzys2I7vbnJ-QkWnQwff1DMczLzPb_lbXQ"/>
+<div class="bg-white p-6 rounded-8 shadow-sm">
+<div class="flex text-yellow-400 mb-2" style="">★★★★★</div>
+<p class="text-slate-600 italic mb-4" style="">"Excelente trato con mi bebé, nos explicó todo de forma clara y el tamiz fue súper rápido. Nos dio mucha paz mental."</p>
+<p class="font-bold text-sm" style="">— María José R.</p>
 </div>
-<div class="flex items-start gap-3 text-slate-600 dark:text-slate-400">
-<span class="material-symbols-outlined text-primary">location_on</span>
-<p>Av. Kepler 2143, Reserva Territorial Atlixcáyotl, 72190 Puebla, Pue.</p>
+<div class="bg-white p-6 rounded-8 shadow-sm">
+<div class="flex text-yellow-400 mb-2" style="">★★★★★</div>
+<p class="text-slate-600 italic mb-4" style="">"La mejor ortopedista pediátrica en Puebla. Puntual, profesional y muy cariñosa con los niños."</p>
+<p class="font-bold text-sm" style="">— Rodrigo S.</p>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Footer -->
-<footer class="bg-background-light dark:bg-background-dark py-12 px-4 border-t border-primary/10">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="text-center md:text-left">
-<p class="font-black text-xl text-primary">Dra. Guiselle Antonio Flores</p>
-<p class="text-slate-500 text-sm">Traumatología y Ortopedia Pediátrica</p>
+<!-- END: TrustSection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-medicalBlue text-white py-12 px-4" data-purpose="footer">
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 border-b border-blue-800 pb-12 mb-8">
+<div>
+<h4 class="font-bold text-xl mb-6 text-primary" style="">Dra. Guiselle Antonio Flores</h4>
+<p class="text-blue-200 text-sm leading-relaxed" style="">
+          Especialista dedicada al cuidado del desarrollo músculo-esquelético de los más pequeños de la casa.
+        </p>
 </div>
-<div class="flex gap-6">
-<a class="text-slate-600 hover:text-primary transition-colors" href="https://wa.me/522214365261">
-<span class="material-symbols-outlined">chat</span>
-</a>
-<a class="text-slate-600 hover:text-primary transition-colors" href="#">
-<span class="material-symbols-outlined">mail</span>
-</a>
+<div>
+<h4 class="font-bold text-lg mb-6" style="">Ubicación</h4>
+<p class="text-blue-200 text-sm" style="">
+          Hospital Ángeles Puebla<br>
+          Av. Kepler 2143, Reserva Territorial Atlixcáyotl,<br>
+          Puebla, Pue. CP 72190
+        </p>
 </div>
-<p class="text-slate-400 text-xs">© 2024 - Todos los derechos reservados. Puebla, México.</p>
+<div>
+<h4 class="font-bold text-lg mb-6" style="">Contacto Directo</h4>
+<a class="text-white font-bold block mb-2 hover:text-primary transition-colors text-lg" href="tel:522214365261" style="">+52 221 436 5261</a>
+<p class="text-blue-200 text-sm" style="">Lunes a Sábado - Previa Cita</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center text-xs text-blue-400">
+<p class="" style="">© 2023 Dra. Guiselle Antonio Flores. Todos los derechos reservados.</p>
+<div class="mt-4 md:mt-0 flex gap-6">
+<a class="hover:underline" href="#" style="">Aviso de Privacidad</a>
+<a class="hover:underline" href="#" style="">Términos y Condiciones</a>
+</div>
 </div>
 </footer>
+<!-- END: Footer -->
 </body></html>
